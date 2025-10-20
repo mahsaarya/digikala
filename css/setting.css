@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../fonts/Qs_Iranyekan\ light.ttf);
+}
+@font-face {
+  font-family: Nazanin;
+  src: url(../fonts/B-NAZANIN.TTF);
+}
+html,
+body {
+  font-family: Yekan;
+  direction: rtl;
+}
+.wrapper {
+  width: 100%;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+.swiper-button-disabled {
+  opacity: 0 !important;
+}

@@ -1,0 +1,19 @@
+.gallery3{
+    width: 100%;
+    height: 250px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    .gallery3-center{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+        img{
+            width: 661px;
+            height: 264px;
+            border-radius: 5%;
+        }
+    }
+}
