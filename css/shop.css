@@ -1,0 +1,82 @@
+/* ...existing code... */
+.shop {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-center {
+  width: 85%;
+  height: 100%;
+  text-align: justify;
+  position: relative;
+}
+
+/* the text block that should be clamped */
+.shop-center .shop-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.shop-center .shop-text h1 {
+  font-size: 21px;
+  color: #3f4064;
+  font-family: Yekan;
+  font-weight: bold;
+}
+
+.shop-center .shop-text p {
+  font-size: 14px;
+  color: #3f4064;
+  font-family: Yekan;
+  font-weight: bold;
+}
+
+.shop-center .shop-text h2 {
+  font-size: 16.38px;
+  color: #3f4064;
+  font-family: Yekan;
+}
+
+.shop-center .shop-text a {
+  font-size: 14px;
+  color: #0000ee;
+  font-family: Yekan;
+  font-weight: bold;
+}
+
+.footer-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.shop-text.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.toggle-btn1 {
+  display: block;
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn1:hover {
+  background: #0056b3;
+}
+/* ...existing code... */

@@ -1,15 +1,45 @@
-.top-brand {
+.top-brands {
   width: 100%;
   height: 230px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  .top-brand-center {
+  margin-top: 20px;
+  .top-brands-center {
     width: 85%;
     height: 100%;
-    padding: 10px 10px 10px 10px;
+
     box-sizing: border-box;
     border-radius: 16px;
-    background-color: aqua;
+    border: 1px solid #eee;
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 110px;
+      height: 110px;
+    }
+  }
+}
+.top-brands1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
   }
 }

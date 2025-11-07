@@ -14,15 +14,18 @@
 html,
 body {
   font-family: Yekan;
+  box-sizing: border-box;
   direction: rtl;
+  min-height: 100vh;
+  /* overflow: hidden; */
 }
 .wrapper {
   width: 100%;
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid lightgrey;
   background-color: white;
@@ -35,4 +38,15 @@ body {
 }
 .swiper-button-disabled {
   opacity: 0 !important;
+}
+
+/* فقط دسکتاپ */
+@media (min-width: 768px) {
+  html {
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1527));
+    width: 1527px;
+    height: 100%;
+    overflow-x: hidden;
+  }
 }
