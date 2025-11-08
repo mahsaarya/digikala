@@ -43,12 +43,12 @@
           margin: 15px auto;
         }
         .border-link {
-          display: inline-block; 
-          border: 1px solid white; 
+          display: inline-block;
+          border: 1px solid white;
           padding: 8px 16px;
-          border-radius: 8px; 
-          text-decoration: none; 
-          color: white; 
+          border-radius: 8px;
+          text-decoration: none;
+          color: white;
           margin-top: 30px;
           a {
             text-decoration: none;
@@ -66,12 +66,12 @@
         box-sizing: border-box;
         background-color: white;
         border-radius: 11px;
-        .wonder{
-            width: 116px;
-            height: 14px;
-            display: block;
-            margin: 5px auto;
-            margin-right: 10px;
+        .wonder {
+          width: 116px;
+          height: 14px;
+          display: block;
+          margin: 5px auto;
+          margin-right: 10px;
         }
         img {
           width: 150px;

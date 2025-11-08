@@ -42,7 +42,7 @@
           flex-direction: row-reverse;
           column-gap: 5px;
           margin-top: 15px;
-          .hourse,
+          .hours,
           .seconds,
           .minutes {
             width: 30px;

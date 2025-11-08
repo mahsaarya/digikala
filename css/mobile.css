@@ -45,16 +45,16 @@
           }
         }
       }
-      .mobile-center-item-bottom{
+      .mobile-center-item-bottom {
         width: 100%;
-        a{
-            display: block;
-            width: 100%;
-            text-align: center;
-            color: rgb(5, 124, 124);
-            text-decoration: none;
-            font-size: 13px;
-            margin-top: 10px;
+        a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: rgb(5, 124, 124);
+          text-decoration: none;
+          font-size: 13px;
+          margin-top: 10px;
         }
       }
     }

@@ -2,7 +2,7 @@
   width: 100%;
   height: 114px;
   box-shadow: 0 1px 1px lightgrey;
-  
+
   .header2-center {
     width: 100%;
     height: 70px;
@@ -18,11 +18,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .fresh{
+        .fresh {
           width: 45px;
           height: 45px;
         }
-        .fresh2{
+        .fresh2 {
           width: 151px;
           height: 40px;
         }
@@ -132,7 +132,6 @@
               width: 18px;
               height: 18px;
               color: #a1a3a8;
-              
             }
           }
         }
