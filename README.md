@@ -1,18 +1,18 @@
-# پروژه Digikala — قالب/سایت ایستا
+# Digikala — Static Site / Template
 
-این مخزن شامل یک قالب وب ایستا (HTML/CSS) برای فروشگاه/فهرست محصولات است. محتوا به‌صورت فایل‌های HTML و فولدرهای جداگانه برای CSS و تصاویر سازمان‌دهی شده‌اند و برای استفاده به‌عنوان یک سایت استاتیک یا پایه‌ای برای توسعه فرانت‌اند مناسب است.
+This repository contains a static HTML/CSS template for an e-commerce / product listing site. The project is organized as plain HTML files with separate folders for CSS, images, fonts, and icon assets. It's suitable as a static site or as a starting point for front-end development.
 
-## آنچه در این مخزن هست
+## What’s in this repository
 
-- فایل‌های HTML اصلی: `Index.html`, `mode.html`, `form.html`, `supermarket.html`, `svg.html` و ...
-- پوشه `css/` شامل فایل‌های سبک جداشده برای صفحات و کامپوننت‌ها
-- پوشه `images/` شامل تصاویر دسته‌بندی‌شده بر اساس بخش‌ها
-- پوشه `fonts/` و `font-awesome/` برای آیکون‌ها و قلم‌ها
+- Main HTML files such as `Index.html`, `mode.html`, `form.html`, `supermarket.html`, `svg.html`, etc.
+- `css/` directory with individual stylesheet files for sections and components
+- `images/` directory with categorized image folders
+- `fonts/` and `font-awesome/` for icons and typefaces
 
-## ساختار نمونه (گزیده)
+## Example structure (excerpt)
 
 ```
-/ (ریشه)
+/ (project root)
 	├─ Index.html
 	├─ form.html
 	├─ css/
@@ -26,56 +26,60 @@
 	└─ font-awesome/
 ```
 
-## اجرا و مشاهده محلی (ساده)
+## View locally
 
-این پروژه نیاز به ساخت/سرور پیچیده ندارد؛ کافی‌ست فایل‌های HTML را در مرورگر باز کنید. برای تجربه بهتر (برای سروِر محلی و جلوگیری از مشکلات مسیرها) می‌توانید یک سرور فایل ساده اجرا کنید.
+No build step is required — you can open the HTML files directly in your browser. For a better local experience (and to avoid certain path issues), run a simple HTTP server in the project folder.
 
-PowerShell (Windows) — با Python 3:
+PowerShell (Windows) — using Python 3:
 
 ```powershell
-# در پوشهٔ پروژه اجرا کنید
-python -m http.server 8000; # سپس مرورگر را باز کنید: http://localhost:8000
+# Run in the project folder
+python -m http.server 8000; # then open http://localhost:8000 in your browser
 ```
 
-یا با Node (اگر `http-server` نصب شده باشد):
+Or with Node.js (if `http-server` is installed):
 
 ```powershell
-# اگر http-server نصب نیست: npm install -g http-server
+# If not installed: npm install -g http-server
 http-server -p 8000
-# سپس باز کنید: http://localhost:8000
+# then open http://localhost:8000
 ```
 
-و اگر نمی‌خواهید سرور اجرا کنید، فقط `Index.html` را باز کنید:
+Alternatively, simply open `Index.html` with your browser (right-click → Open with → choose browser).
 
-- راست‌کلیک → Open with → مرورگر موردنظر
+## Development notes
 
-## نکات توسعه
+- Styles are split into many CSS files, each usually tied to a page section (header, footer, gallery, products, etc.). Consider consolidating them with Sass or PostCSS if you plan to maintain or extend the project.
+- Images are organized under `images/`. To improve performance, compress images using tools like `imagemin` or online compressors.
+- If you want to convert this into a dynamic site or a component-based frontend (React/Vue), convert the HTML files into templates or components.
 
-- CSSها ساختارمندی دارند و هر فایل معمولاً مربوط به یک بخش از صفحه است (header, footer, gallery, products و غیره). اگر می‌خواهید کد را ماژولار کنید، می‌توانید فایل‌ها را در Sass یا PostCSS مرج کنید.
-- تصاویر در `images/` دسته‌بندی شده‌اند؛ برای کاهش حجم صفحه، پیشنهاد می‌شود تصاویر را با ابزارهایی مانند `imagemin` یا سرویس‌های آنلاین فشرده کنید.
-- برای استفاده در پروژه React/Vue یا به‌عنوان سایت داینامیک، HTMLها را به قالب‌ها یا کامپوننت‌ها تبدیل کنید.
+## Responsive / Mobile
 
-## نکاتی در مورد رسپانسیو و موبایل
+- There is a `mobile.css` and other styles targeting mobile. Test on multiple screen sizes and tweak breakpoints as needed.
 
-- فایل `mobile.css` و چند استایل دیگر برای نسخه موبایل موجود است؛ تست در اندازه‌های مختلف صفحه را فراموش نکنید.
+## Contributing
 
-## مشارکت
+If you want to contribute changes or improvements:
 
-اگر می‌خواهید تغییر یا بهبود اضافه کنید:
+1. Create a new branch.
+2. Make your changes and commit them.
+3. Open a Pull Request against `main` describing the changes.
 
-1. یک شاخه (branch) جدید ایجاد کنید.
-2. تغییرات را اعمال و کامیت کنید.
-3. یک Pull Request به شاخهٔ `main` ارسال کنید و توضیح دهید چه چیزی تغییر کرده.
+## License
 
-## حق نشر / لایسنس
+There is no license file included at the moment. If you plan to publish this repository, consider adding a license such as MIT or Apache 2.0 by adding a `LICENSE` file.
 
-لطفاً یک فایل `LICENSE` اضافه کنید یا در اینجا نوع لایسنس را مشخص کنید. در حال حاضر هیچ لایسنسی مشخص نشده است — اگر قصد انتشار دارید، پیشنهاد می‌شود از یک لایسنس متداول مثل MIT یا Apache 2.0 استفاده کنید.
+## Contact
 
-## تماس
-
-اگر سوالی دارید یا می‌خواهید همکاری کنید، در README یا Issues در مخزن GitHub پیغام بگذارید.
+If you have questions or would like to collaborate, please open an issue or contact the repository maintainer via GitHub.
 
 ---
 
-(اینجا یک README پایه و کاربردی تهیه شده تا سریع روی GitHub منتشر شود. اگر می‌خواهید من توضیحات انگلیسی اضافه کنم، یا یک بخش «How to build» برای ابزار خاصی بسازم، بگویید تا اضافه کنم.)
+If you’d like, I can also:
+
+- Add an English + Persian bilingual README (both languages in the same file or separate files).
+- Add GitHub badges (license, website link) and example screenshots.
+- Create a small `LICENSE` file (e.g., MIT) for you.
+
+Tell me which of the above you'd like next and I’ll apply it.
 "# digikala" 
